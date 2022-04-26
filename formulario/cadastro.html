@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
     <style>
-        table{width: 80%; margin: auto; }
+        table{width: 80%; margin: auto; border: 10px solid red; padding: 10px; }
         td#texto{width: 2%;padding: 5px; text-align: right; }
-        td#campos{width: 10%; size: 40px;}
+        td#campos{width: 10%; size: 40px;padding: 5px;}
         td#titulo{text-align: left; padding: 10px 10px 10px 40px;}
+        input[type=text], select,input[type=password],input[type=date] {
+             padding: 5px 10px;
+             margin: 8px 0;
+             display: inline-block;
+             border: 1px solid #000;
+             border-radius: 4px;
+             box-sizing: border-box;
+             box-shadow: 2px 2px 5px rgb(139, 52, 52);
+            
+        }
+        button{background-color: greenyellow;color: #000;padding: 10px 50px; border-radius: 10px;}
         
     </style>
     <meta charset="UTF-8">
@@ -15,7 +26,7 @@
 </head>
 <body>
     
-<table >
+<table border="1">
     <tr>
         <td id="texto">Email* </td>
         <td id="campos"> <input  type="text" size="40" ></td>
@@ -42,7 +53,7 @@
         <td id="texto"></td>
         <td id="campos"><input type="radio">Pessoa física <input type="radio">Pessoa júridica</td>
         <td id="texto">CEP</td>
-        <td id="campos"><input type=""></td>
+        <td id="campos"><input type="text"></td>
     </tr>
 
    <tr>
@@ -95,7 +106,7 @@
 
    <tr>
     <td id="texto">Nascimento*</td>
-    <td id="campos"><input  type="text" ></td>
+    <td id="campos"><input  type="date" ></td>
     <td id="texto">Cidade</td>
     <td id="campos"><input  type="text" size="40"></td>
    </tr>
@@ -109,7 +120,7 @@
 
    <tr>
        <td></td>
-       <td><button style="background-color: rgb(194, 235, 133);color: black;" >Cadastrar ></button></td>
+       <td><button >Cadastrar ></button></td>
        <td></td>
    </tr>
  
