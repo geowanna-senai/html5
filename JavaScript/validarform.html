@@ -13,7 +13,7 @@
             var y = document.forms["meuForm"]["email"].value;
             var atpos=y.indexOf("@");
             var dotpos= y.lastIndexOf(".");
-            if (atpos <1 || dotpos <atpos +2 || dotpos +2 >=length){
+            if (atpos <1 || dotpos <atpos +2 || dotpos +2 >= y.length){
                 throw "Digite um email válido!";
             }
             return true;
